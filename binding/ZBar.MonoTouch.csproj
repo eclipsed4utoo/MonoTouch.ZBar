@@ -43,14 +43,14 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Xamarin.ObjcBinding.CSharp.targets" />
   <ItemGroup>
-    <ObjcBindingNativeLibrary Include="libzbar.a" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="libzbar.linkwith.cs">
-      <DependentUpon>libzbar.a</DependentUpon>
-    </Compile>
     <Compile Include="ZBarSymbolSet.cs" />
     <Compile Include="ZBarImageScanner.cs" />
     <Compile Include="ZBarSDK.cs" />
+    <Compile Include="libzbar.linkwith.cs">
+      <DependentUpon>libzbar.a</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="libzbar.a" />
   </ItemGroup>
 </Project>

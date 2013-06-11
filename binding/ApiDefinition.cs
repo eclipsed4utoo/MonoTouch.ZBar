@@ -218,6 +218,10 @@ namespace ZBar
 		// - (void) takePicture;
 		[Export ("takePicture")]
 		void TakePicture ();
+
+		//UIImagePickerControllerQualityType videoQuality
+		[Export ("videoQuality")]
+		UIImagePickerControllerQualityType VideoQuality { get; set; }
 		
 		// TODO IF NEEDED
 		// these attempt to emulate UIImagePickerController
